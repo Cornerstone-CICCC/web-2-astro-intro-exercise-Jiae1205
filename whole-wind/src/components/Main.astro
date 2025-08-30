@@ -1,0 +1,34 @@
+<main>
+  <slot /> <!-- This is where page content will go -->
+</main>
+
+<style>
+  main {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 8px;
+  }
+
+  @media screen and (min-width: 768px) {
+    main {
+      flex-direction: row;
+    }
+  }
+</style>
+
+<style>
+  /* Main Content */
+  main {
+    padding: 20px;
+    max-width: 800px;
+    margin: 20px auto;
+    background-color: #e12d2d;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(127, 30, 30, 0.1);
+  }
+
+  h1 {
+    color: #333;
+  }
+</style>
